@@ -1,0 +1,14 @@
+server:
+  port: '8767'
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+#          searchPaths: config-file
+          uri: https://gitee.com/m148632018/config-server-repo
+          username: 657877529@qq.com
+          password: mfm9517530
