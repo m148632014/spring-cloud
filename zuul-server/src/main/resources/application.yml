@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://10.255.33.108:8761/eureka/
+      defaultZone: http://admin:123456@10.255.33.1085:8761/eureka/
 server:
   port: 8766
 spring:
@@ -9,9 +9,9 @@ spring:
     name: zuul-server
 zuul:
   routes:
-    say-hello-service:
+    kepler-calculate:
       path: /kepler-calculate/**
       serviceId: kepler-calculate
-    greeting-service:
+    thread_portfolio:
       path: /thread_portfolio/**
       serviceId: thread-portfolio
