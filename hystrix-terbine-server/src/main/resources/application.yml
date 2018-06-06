@@ -1,3 +1,7 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://admin:123456@10.255.33.108:8761/eureka/
 spring:
   application.name: hystrix-terbine-server
 server:
@@ -8,7 +12,3 @@ turbine:
     clusterConfig: default   
   appConfig: say-hello-service
   clusterNameExpression: new String("default")
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
