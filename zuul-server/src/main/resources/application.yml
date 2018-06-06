@@ -10,8 +10,8 @@ spring:
 zuul:
   routes:
     say-hello-service:
-      path: /say-hello-service/**
-      serviceId: say-hello-service
+      path: /kepler-calculate/**
+      serviceId: kepler-calculate
     greeting-service:
-      path: /greeting-service/**
-      serviceId: greeting-service
+      path: /thread_portfolio/**
+      serviceId: thread-portfolio
