@@ -1,7 +1,7 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://admin:123456@10.255.33.1085:8761/eureka/
+      defaultZone: http://admin:123456@10.255.33.108:8761/eureka/
 server:
   port: 8766
 spring:
