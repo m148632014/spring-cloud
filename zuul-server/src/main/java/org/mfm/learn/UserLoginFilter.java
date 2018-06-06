@@ -14,7 +14,8 @@ public class UserLoginFilter extends ZuulFilter {
 
 	private static Logger logger = LoggerFactory.getLogger(UserLoginFilter.class);
 
-	public Object run() {
+	@Override
+    public Object run() {
 		RequestContext requestContext = RequestContext.getCurrentContext();
 		HttpServletRequest request = requestContext.getRequest();
 		UserLoginFilter.logger.info(String.format("%s >>> %s", request.getMethod(), request.getRequestURL().toString()));
@@ -22,7 +23,8 @@ public class UserLoginFilter extends ZuulFilter {
 		Object userId = request.getParameter("userId");
 
 		if(userId == null) {
-			UserLoginFilter.logger.warn("userId is empry, not allow to access website");
+            UserLoginFilter.logger
+                .warn("userId is empty, not allow to access website");
 			requestContext.setSendZuulResponse(false);
 			requestContext.setResponseStatusCode(401);
 			try {
@@ -40,7 +42,8 @@ public class UserLoginFilter extends ZuulFilter {
 		return null;
 	}
 
-	public boolean shouldFilter() {
+	@Override
+    public boolean shouldFilter() {
 		return true;
 	}
 

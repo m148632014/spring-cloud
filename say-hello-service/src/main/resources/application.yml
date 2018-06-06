@@ -7,4 +7,8 @@ server:
 spring:
   application:
     name: say-hello-service
-spring.zipkin.base-url: http://10.255.33.108:9411
+  zipkin:
+    base-url: http://10.255.33.108:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
