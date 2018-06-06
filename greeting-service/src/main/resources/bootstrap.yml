@@ -17,3 +17,6 @@ spring:
       uri: http://10.255.33.108:8767/
   zipkin:
     base-url: http://10.255.33.108:9411
+  sleuth:
+    sampler:
+      percentage: 1.0

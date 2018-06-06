@@ -7,6 +7,11 @@ server:
 spring:
   application:
     name: zuul-server
+  zipkin:
+    base-url: http://10.255.33.108:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
 zuul:
   routes:
     say-hello-service:
