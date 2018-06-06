@@ -9,9 +9,9 @@ spring:
     name: zuul-server
 zuul:
   routes:
-    kepler-calculate:
-      path: /kepler-calculate/**
-      serviceId: kepler-calculate
-    thread_portfolio:
-      path: /thread_portfolio/**
-      serviceId: thread-portfolio
+    say-hello-service:
+      path: /say-hello-service/**
+      serviceId: say-hello-service
+    greeting-service:
+      path: /greeting-service/**
+      serviceId: greeting-service

@@ -9,7 +9,7 @@ server:
   port: '8764'
 spring:
   application:
-    name: config-client
+    name: greeting-service
   cloud:
     config:
       label: master
