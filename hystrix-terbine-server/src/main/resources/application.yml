@@ -4,6 +4,11 @@ eureka:
       defaultZone: http://admin:123456@10.255.33.108:8761/eureka/
 spring:
   application.name: hystrix-terbine-server
+  zipkin:
+    base-url: http://10.255.33.108:9411
+  sleuth:
+    sampler:
+      percentage: 1.0
 server:
   port: 8765
 security.basic.enabled: false
