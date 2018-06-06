@@ -10,7 +10,7 @@ security:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: 10.255.33.108
   client:
     registerWithEureka: false
     fetchRegistry: false
